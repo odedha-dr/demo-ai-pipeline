@@ -10,7 +10,7 @@ def get_stars(repo: str):
     print(f"{repo} has {count} stars!")
 
 
-@flow(name="GitHub Stars")
+@flow(name="github-stars")
 def github_stars(repos: List[str]):
     for repo in repos:
         get_stars(repo)
